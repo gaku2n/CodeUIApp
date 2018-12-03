@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Views
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // 背景色を変更
+        self.view.backgroundColor = UIColor.green
     }
-
-
 }
 

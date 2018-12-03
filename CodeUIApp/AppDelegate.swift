@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        /* 最初に表示するUIViewControllerを指定する */
+        // windowをスクリーンサイズに合わせて生成
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // ViewControllerをインスタンス化、windowのroorに設定する
+        window!.rootViewController = ViewController()
+        // 表示する
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

@@ -26,7 +26,7 @@ class SecondViewController: ViewController {
         self.button.setTitle("Back", for: .normal)
     }
     
-    @objc override func buttonDidTap() {
+    @objc override func buttonDidTap(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 }

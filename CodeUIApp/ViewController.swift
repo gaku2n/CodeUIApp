@@ -35,14 +35,14 @@ class ViewController: UIViewController {
         /* ボタンを配置 */
         self.view.addSubview(self.button)
         self.button.setTitle("Next", for: .normal)
-        self.button.addTarget(self, action: #selector(self.buttonDidTap), for: .touchUpInside)
+        self.button.addTarget(self, action: #selector(self.buttonDidTap(_:)), for: .touchUpInside)
         self.button.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview() // X軸中心を親Viewに合わせる
             make.bottom.equalTo(self.view.safeAreaInsets.bottom).inset(100) //下から100ポイント上に配置
         }
     }
     
-    @objc func buttonDidTap() {
+    @objc func buttonDidTap(_ sender: UIButton) {
         let secondViewController = SecondViewController()
         self.present(secondViewController, animated: true, completion: nil)
     }

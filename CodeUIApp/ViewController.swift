@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     // MARK: Views
     let label = UILabel()
+    let button = UIButton()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -30,6 +31,20 @@ class ViewController: UIViewController {
         self.label.snp.makeConstraints { (make) in
             make.center.equalToSuperview() // 中心を親Viewに合わせる
         }
+        
+        /* ボタンを配置 */
+        self.view.addSubview(self.button)
+        self.button.setTitle("Next", for: .normal)
+        self.button.addTarget(self, action: #selector(self.buttonDidTap), for: .touchUpInside)
+        self.button.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview() // X軸中心を親Viewに合わせる
+            make.bottom.equalTo(self.view.safeAreaInsets.bottom).inset(100) //下から100ポイント上に配置
+        }
+    }
+    
+    @objc func buttonDidTap() {
+        let secondViewController = SecondViewController()
+        self.present(secondViewController, animated: true, completion: nil)
     }
 }
 

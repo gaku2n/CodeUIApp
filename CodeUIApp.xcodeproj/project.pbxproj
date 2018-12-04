@@ -12,6 +12,7 @@
 		246BAD8421B5F1FB00FE8A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246BAD8321B5F1FB00FE8A39 /* Assets.xcassets */; };
 		246BAD8721B5F1FB00FE8A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246BAD8521B5F1FB00FE8A39 /* LaunchScreen.storyboard */; };
 		246BAD9021B5F37200FE8A39 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246BAD8F21B5F37200FE8A39 /* SnapKit.framework */; };
+		246BAD9321B5F8AF00FE8A39 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246BAD9221B5F8AF00FE8A39 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		246BAD8621B5F1FB00FE8A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246BAD8821B5F1FB00FE8A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246BAD8F21B5F37200FE8A39 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		246BAD9221B5F8AF00FE8A39 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				246BAD7C21B5F1F800FE8A39 /* AppDelegate.swift */,
 				246BAD7E21B5F1F800FE8A39 /* ViewController.swift */,
+				246BAD9221B5F8AF00FE8A39 /* SecondViewController.swift */,
 				246BAD8321B5F1FB00FE8A39 /* Assets.xcassets */,
 				246BAD8521B5F1FB00FE8A39 /* LaunchScreen.storyboard */,
 				246BAD8821B5F1FB00FE8A39 /* Info.plist */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				246BAD7F21B5F1F800FE8A39 /* ViewController.swift in Sources */,
+				246BAD9321B5F8AF00FE8A39 /* SecondViewController.swift in Sources */,
 				246BAD7D21B5F1F800FE8A39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
